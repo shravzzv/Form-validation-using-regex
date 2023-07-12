@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Regular Expressions tutorial</title>
+  </head>
+  <body>
+    <h1>New User Signup</h1>
+
+    <form>
+      <input type="text" name="username" placeholder="username" />
+      <p>Username must be alphanumeric and contain 5-12 characters</p>
+
+      <input type="email" name="email" placeholder="email" />
+      <p>Email must be a valid address, e.g. me@mydomain.com</p>
+
+      <input type="password" name="password" placeholder="password" />
+      <p>
+        Password must be alphanumeric (@,_,- are also allowed) and be 8-20
+        characters
+      </p>
+
+      <input type="tel" name="telephone" placeholder="telephone" />
+      <p>Telephone must a valid Indian telephone number (10 digits)</p>
+
+      <input type="text" name="slug" placeholder="profile slug" />
+      <p>
+        Slug must contain only lowercase letters, numbers and hyphens, and be
+        8-20 characters
+      </p>
+    </form>
+
+    <script src="validation.js"></script>
+  </body>
+</html>
