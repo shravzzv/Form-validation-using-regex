@@ -22,8 +22,6 @@ inputs.forEach((input) => {
 
 // validation functions
 const validate = (input, regex) => {
-  console.log(regex.test(input.value))
-
   if (regex.test(input.value)) {
     input.className = 'valid'
   } else {
